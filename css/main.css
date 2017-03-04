@@ -3,11 +3,11 @@
 }
 
 html, body {
-  background-color: #f0f0f0;
+  background: #f0f0f0;
 }
 
 body {
-  padding: 28px 15px 0 15px;
+  padding: 28px 15px 0;
   line-height: 1.7;
   color: #333;
 }
@@ -28,20 +28,20 @@ h1 {
 }
 
 .box {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
-  border-top: 8px solid #5898B2;
-  border-bottom: 8px solid #FF7C93;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #FFF;
   padding: 28px;
-  margin-bottom: 28px;
+  border-color: #5898B2 transparent #FF7C93;
+  background: #FFF;
 }
 
 .photo {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
-  border-top: 8px solid #4a4a4a;
-  border-bottom: 8px solid #4a4a4a;
+  border-color: #4a4a4a transparent;
+}
+
+.box, 
+.photo {
   max-width: 800px;
-  margin: 0 auto 28px auto;
+  border-width: 8px 0;
+  border-style: solid;
+  margin: 0 auto 28px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 }
